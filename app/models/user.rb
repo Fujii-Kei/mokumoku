@@ -35,7 +35,7 @@ class User < ApplicationRecord
   end
 
   def attend(event)
-    event_attendances.find_or_create_by(event_id: event.id) 
+    event_attendances.find_or_create_by(event_id: event.id)
   end
 
   def attend?(event)
